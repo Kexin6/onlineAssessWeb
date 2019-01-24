@@ -34,3 +34,9 @@ def discussion(request):
 
 def Q_A(request):
     return render(request, 'discussionBoard/QASession.html')
+def main(request):
+    name = request.GET.get('name1')  # 获取参数值
+    ans = {}
+    # print ('Welcome', end= '')
+    ans['head'] = name  # 运算处理
+    return render(request, 'discussionBoard/main.html', ans)

@@ -25,5 +25,6 @@ urlpatterns = [
     path('Contact.html/', views.contact, name='contact'),
     path('discussion.html/', views.discussion, name='discussion'),
     path('QASession.html/', views.Q_A, name='QASession'),
+    path('main.html/', views.main, name='main')
 
 ]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
